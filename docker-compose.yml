@@ -16,7 +16,7 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__ConnectionString: Host=db;Port=5432;Database=library;user Id=root;Password=root;Include Error Detail=true
     ports:
-      - "8080:80"
+      - "8090:80"
     depends_on:
       - db
 volumes:
