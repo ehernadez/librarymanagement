@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryManagement.Application\LibraryManagement.Application.csproj" />
+    <ProjectReference Include="..\LibraryManagement.Gateway\LibraryManagement.Gateway.csproj" />
+    <ProjectReference Include="..\LibraryManagement.Main\LibraryManagement.Main.csproj" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+bin/
+obj/
+*.md
+*.sql
+.vscode/
+.git/
