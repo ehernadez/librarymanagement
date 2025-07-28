@@ -1,7 +1,7 @@
 
 # LibraryManagement Backend
 
-## Descripción
+## Descripción 
 API RESTful para la gestión de libros, desarrollada en .NET 9, con persistencia en PostgreSQL y empaquetada para ejecución en Docker. Incluye endpoints para crear, consultar, actualizar y eliminar libros, validación de datos y manejo de errores.
 
 ## Requisitos previos
