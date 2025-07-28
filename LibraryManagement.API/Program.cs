@@ -34,7 +34,11 @@ app.Services.InitializeDatabase();
 // }
 
 app.UseMiddleware<ExceptionHandlerMiddleware>();
-app.UseHttpsRedirection();
+
+if (!app.Environment.IsEnvironment("Docker"))
+{
+    app.UseHttpsRedirection();
+}
 
 // Mapea los endpoints
 app.MapBookEndpoints();

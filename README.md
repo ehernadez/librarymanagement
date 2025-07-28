@@ -1,6 +1,8 @@
 
 # LibraryManagement Backend
 
+Repositorio: [https://github.com/ehernadez/librarymanagement](https://github.com/ehernadez/librarymanagement)
+
 ## Descripción 
 API RESTful para la gestión de libros, desarrollada en .NET 9, con persistencia en PostgreSQL y empaquetada para ejecución en Docker. Incluye endpoints para crear, consultar, actualizar y eliminar libros, validación de datos y manejo de errores.
 
@@ -12,7 +14,7 @@ API RESTful para la gestión de libros, desarrollada en .NET 9, con persistencia
 1. **Descarga el proyecto**
    - Clona el repositorio:
      ```bash
-     git clone <URL_DEL_REPOSITORIO>
+     git clone https://github.com/ehernadez/librarymanagement
      cd LibraryManagement
      ```
 2. **Ejecuta con Docker Compose**
@@ -20,14 +22,15 @@ API RESTful para la gestión de libros, desarrollada en .NET 9, con persistencia
      ```bash
      docker compose up --build
      ```
+
    - Esto levantará automáticamente:
      - Una base de datos PostgreSQL llamada `library` (usuario: `root`, contraseña: `root`)
-     - La API en el puerto `8080`
+     - La API en el puerto `5000` (mapeado al puerto 80 del contenedor)
    - No necesitas crear la base de datos manualmente ni modificar archivos de configuración.
 
 3. **Acceso a la API y documentación**
-   - API: [http://localhost:8080](http://localhost:8080)
-   - Swagger: [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html)
+   - API: [http://localhost:5000](http://localhost:5000)
+   - Swagger: [http://localhost:5000/swagger/index.html](http://localhost:5000/swagger/index.html)
 
 ## Endpoints principales
 - `POST /books` - Agregar libro

@@ -11,12 +11,16 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
   api:
-    build: .
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__ConnectionString: Host=db;Port=5432;Database=library;user Id=root;Password=root;Include Error Detail=true
+    build:
+      context: .
+      dockerfile: LibraryManagement.API/Dockerfile
     ports:
-      - "8090:80"
+      - "5000:80"
+
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      ASPNETCORE_URLS: http://+:80
+      ConnectionStrings__ConnectionString: Host=db;Port=5432;Database=library;user Id=root;Password=root;Include Error Detail=true
     depends_on:
       - db
 volumes:
