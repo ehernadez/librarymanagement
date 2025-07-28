@@ -10,12 +10,6 @@ obj/
 # Visual Studio Code
 .vscode/
 
-# Docker
-*.sql
-*.md
-Dockerfile
-docker-compose.yml
-
 # OS
 .DS_Store
 Thumbs.db
